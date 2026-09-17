@@ -64,11 +64,11 @@ const resources = [
 
 
     /* =================================================
-       DIGITAL ELECTRONICS
+       FUNDAMENTALS OF ELECTRONICS ENGINEERING
        ================================================= */
 
     {
-        subject: "⚡ Digital Electronics",
+        subject: "⚡Fundamentals of Electronics Engineering",
         unit: "Unit 1",
         name: "Semiconductors – Notes",
         type: "PDF",
@@ -78,7 +78,7 @@ const resources = [
     },
 
     {
-        subject: "⚡ Digital Electronics",
+        subject: "⚡Fundamentals of Electronics Engineering",
         unit: "Unit 1",
         name: "Semiconductors – Important Questions",
         type: "Questions",
@@ -88,17 +88,17 @@ const resources = [
     },
 
     {
-        subject: "⚡ Digital Electronics",
+        subject: "⚡Fundamentals of Electronics Engineering",
         unit: "Unit 2",
         name: "Digital Electronics – Notes",
         type: "PDF",
         icon: "📄",
         important: false,
-        link: "#"
+        link: "https://drive.google.com/file/d/1GfvytPtvyHptmwD_9HEW700HFQJzYwkd/view?usp=sharing"
     },
 
     {
-        subject: "⚡ Digital Electronics",
+        subject: "⚡Fundamentals of Electronics Engineering",
         unit: "Unit 2",
         name: "Digital Electronics – Important Questions",
         type: "Questions",
