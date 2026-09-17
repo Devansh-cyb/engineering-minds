@@ -16,6 +16,10 @@
    ===================================================== */
 
 
+/* =====================================================
+   STUDY RESOURCES
+   ===================================================== */
+
 const resources = [
 
     /* =================================================
@@ -64,11 +68,11 @@ const resources = [
 
 
     /* =================================================
-       FUNDAMENTALS OF ELECTRONICS ENGINEERING
+       DIGITAL ELECTRONICS
        ================================================= */
 
     {
-        subject: "⚡Fundamentals of Electronics Engineering",
+        subject: "⚡ Digital Electronics",
         unit: "Unit 1",
         name: "Semiconductors – Notes",
         type: "PDF",
@@ -78,7 +82,7 @@ const resources = [
     },
 
     {
-        subject: "⚡Fundamentals of Electronics Engineering",
+        subject: "⚡ Digital Electronics",
         unit: "Unit 1",
         name: "Semiconductors – Important Questions",
         type: "Questions",
@@ -88,17 +92,19 @@ const resources = [
     },
 
     {
-        subject: "⚡Fundamentals of Electronics Engineering",
+        subject: "⚡ Digital Electronics",
         unit: "Unit 2",
         name: "Digital Electronics – Notes",
         type: "PDF",
         icon: "📄",
         important: false,
-        link: "https://drive.google.com/file/d/1GfvytPtvyHptmwD_9HEW700HFQJzYwkd/view?usp=sharing"
+
+        /* TEMPORARY DRIVE LINK */
+        link: "YOUR_EXISTING_DRIVE_LINK_HERE"
     },
 
     {
-        subject: "⚡Fundamentals of Electronics Engineering",
+        subject: "⚡ Digital Electronics",
         unit: "Unit 2",
         name: "Digital Electronics – Important Questions",
         type: "Questions",
@@ -186,6 +192,291 @@ const resources = [
 
 
 /* =====================================================
+   ASSIGNMENTS
+   ===================================================== */
+
+const assignments = [
+
+    /* Mathematics */
+
+    {
+        subject: "📐 Mathematics-I",
+        name: "Assignment 1",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "📐 Mathematics-I",
+        name: "Assignment 2",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "📐 Mathematics-I",
+        name: "Assignment 3",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "📐 Mathematics-I",
+        name: "Assignment 4",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "📐 Mathematics-I",
+        name: "Assignment 5",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+
+    /* Digital Electronics */
+
+    {
+        subject: "⚡ Digital Electronics",
+        name: "Assignment 1",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "⚡ Digital Electronics",
+        name: "Assignment 2",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "⚡ Digital Electronics",
+        name: "Assignment 3",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "⚡ Digital Electronics",
+        name: "Assignment 4",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "⚡ Digital Electronics",
+        name: "Assignment 5",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+
+    /* Essentials of AI */
+
+    {
+        subject: "🤖 Essentials of AI",
+        name: "Assignment 1",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "🤖 Essentials of AI",
+        name: "Assignment 2",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "🤖 Essentials of AI",
+        name: "Assignment 3",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "🤖 Essentials of AI",
+        name: "Assignment 4",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "🤖 Essentials of AI",
+        name: "Assignment 5",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+
+    /* Environmental Chemistry */
+
+    {
+        subject: "🧪 Environmental Chemistry",
+        name: "Assignment 1",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "🧪 Environmental Chemistry",
+        name: "Assignment 2",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "🧪 Environmental Chemistry",
+        name: "Assignment 3",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "🧪 Environmental Chemistry",
+        name: "Assignment 4",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "🧪 Environmental Chemistry",
+        name: "Assignment 5",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+
+    /* Mechanical Engineering */
+
+    {
+        subject: "⚙️ Fundamentals of Mechanical Engineering",
+        name: "Assignment 1",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "⚙️ Fundamentals of Mechanical Engineering",
+        name: "Assignment 2",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "⚙️ Fundamentals of Mechanical Engineering",
+        name: "Assignment 3",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "⚙️ Fundamentals of Mechanical Engineering",
+        name: "Assignment 4",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    },
+
+    {
+        subject: "⚙️ Fundamentals of Mechanical Engineering",
+        name: "Assignment 5",
+        type: "Assignment",
+        icon: "📝",
+        link: "#"
+    }
+
+];
+
+
+/* =====================================================
+   PRACTICALS
+   ===================================================== */
+
+const practicals = [
+
+    /* =================================================
+       SOFT SKILLS
+       ================================================= */
+
+    ...createPracticals("🗣️ Soft Skills"),
+
+    /* =================================================
+       ELECTRONICS LAB
+       ================================================= */
+
+    ...createPracticals("⚡ Electronics Lab"),
+
+    /* =================================================
+       WORKSHOP
+       ================================================= */
+
+    ...createPracticals("🔧 Workshop"),
+
+    /* =================================================
+       CHEMISTRY LAB
+       ================================================= */
+
+    ...createPracticals("🧪 Chemistry Lab"),
+
+    /* =================================================
+       AI LAB
+       ================================================= */
+
+    ...createPracticals("🤖 AI Lab")
+
+];
+
+
+/* =====================================================
+   CREATE 10 PRACTICALS FOR EACH LAB
+   ===================================================== */
+
+function createPracticals(subject) {
+
+    return Array.from({ length: 10 }, (_, index) => ({
+
+        subject: subject,
+
+        name: `Practical ${index + 1}`,
+
+        type: "Practical",
+
+        icon: "🔬",
+
+        link: "#"
+
+    }));
+
+}
+
+
+/* =====================================================
    IMPORTANT RESOURCES
    ===================================================== */
 
@@ -240,7 +531,7 @@ function displayImportantResources() {
 
 
 /* =====================================================
-   ALL RESOURCES
+   ALL STUDY RESOURCES
    ===================================================== */
 
 function displayResources(list = resources) {
@@ -266,8 +557,6 @@ function displayResources(list = resources) {
     noResults.style.display = "none";
 
 
-    /* Group by subject */
-
     const subjects = {};
 
 
@@ -291,8 +580,6 @@ function displayResources(list = resources) {
 
     });
 
-
-    /* Create subject cards */
 
     Object.keys(subjects).forEach(subject => {
 
@@ -328,8 +615,6 @@ function displayResources(list = resources) {
         `;
 
 
-        /* Units */
-
         Object.keys(subjects[subject]).forEach(unitName => {
 
             const unit =
@@ -361,12 +646,9 @@ function displayResources(list = resources) {
 
                 link.className = "resource";
 
-
                 link.href = resource.link;
 
-
                 link.target = "_blank";
-
 
                 link.rel = "noopener noreferrer";
 
@@ -416,6 +698,109 @@ function displayResources(list = resources) {
 
 
 /* =====================================================
+   ASSIGNMENTS & PRACTICALS
+   ===================================================== */
+
+function displayAssignmentsAndPracticals() {
+
+    const container =
+        document.getElementById("assignments-container");
+
+
+    if (!container) return;
+
+
+    const allItems =
+        [...assignments, ...practicals];
+
+
+    const subjects = {};
+
+
+    allItems.forEach(item => {
+
+        if (!subjects[item.subject]) {
+
+            subjects[item.subject] = [];
+
+        }
+
+
+        subjects[item.subject].push(item);
+
+    });
+
+
+    container.innerHTML = `
+
+        <div class="assignment-grid">
+
+            ${Object.keys(subjects).map(subject => `
+
+                <div class="assignment-subject">
+
+                    <div class="assignment-subject-header">
+
+                        <h3>
+                            ${subject}
+                        </h3>
+
+                        <span>
+                            ${subjects[subject].length} items
+                        </span>
+
+                    </div>
+
+
+                    <div class="assignment-list">
+
+                        ${subjects[subject].map(item => `
+
+                            <a
+                                href="${item.link}"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="assignment-item"
+                            >
+
+                                <div class="assignment-icon">
+                                    ${item.icon}
+                                </div>
+
+                                <div class="assignment-info">
+
+                                    <strong>
+                                        ${item.name}
+                                    </strong>
+
+                                    <small>
+                                        ${item.type}
+                                    </small>
+
+                                </div>
+
+                                <div class="assignment-arrow">
+                                    ↗
+                                </div>
+
+                            </a>
+
+                        `).join("")}
+
+                    </div>
+
+                </div>
+
+            `).join("")}
+
+        </div>
+
+    `;
+
+}
+
+
+/* =====================================================
    SEARCH
    ===================================================== */
 
@@ -435,11 +820,14 @@ function searchResources() {
 
         displayImportantResources();
 
+        displayAssignmentsAndPracticals();
+
         return;
+
     }
 
 
-    const filtered =
+    const filteredResources =
         resources.filter(resource => {
 
             return (
@@ -471,7 +859,103 @@ function searchResources() {
         });
 
 
-    displayResources(filtered);
+    displayResources(filteredResources);
+
+
+    const filteredAssignments =
+        [...assignments, ...practicals]
+            .filter(item => {
+
+                return (
+
+                    item.name
+                        .toLowerCase()
+                        .includes(query)
+
+                    ||
+
+                    item.subject
+                        .toLowerCase()
+                        .includes(query)
+
+                    ||
+
+                    item.type
+                        .toLowerCase()
+                        .includes(query)
+
+                );
+
+            });
+
+
+    displayAssignmentsSearch(filteredAssignments);
+
+}
+
+
+/* =====================================================
+   SEARCH RESULTS FOR ASSIGNMENTS / PRACTICALS
+   ===================================================== */
+
+function displayAssignmentsSearch(list) {
+
+    const container =
+        document.getElementById("assignments-container");
+
+
+    if (!container) return;
+
+
+    if (list.length === 0) {
+
+        container.innerHTML = "";
+
+        return;
+
+    }
+
+
+    container.innerHTML = `
+
+        <div class="assignment-grid">
+
+            ${list.map(item => `
+
+                <a
+                    href="${item.link}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="assignment-item"
+                >
+
+                    <div class="assignment-icon">
+                        ${item.icon}
+                    </div>
+
+                    <div class="assignment-info">
+
+                        <strong>
+                            ${item.name}
+                        </strong>
+
+                        <small>
+                            ${item.subject} • ${item.type}
+                        </small>
+
+                    </div>
+
+                    <div class="assignment-arrow">
+                        ↗
+                    </div>
+
+                </a>
+
+            `).join("")}
+
+        </div>
+
+    `;
 
 }
 
@@ -483,3 +967,5 @@ function searchResources() {
 displayImportantResources();
 
 displayResources();
+
+displayAssignmentsAndPracticals();
