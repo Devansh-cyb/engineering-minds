@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Engineering Minds | Study Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="container">
+
+            <div class="logo">EM</div>
+
+            <h1>Engineering Minds</h1>
+
+            <p>Study Hub • B.Tech CSE (DS)</p>
+
+            <div class="search-box">
+
+                <span>🔎</span>
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search notes, PDFs, questions..."
+                    onkeyup="searchResources()"
+                >
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main class="container">
+
+        <section class="welcome">
+
+            <h2>📚 Study Resources</h2>
+
+            <p>
+                All important study material in one place.
+            </p>
+
+        </section>
+
+
+        <!-- IMPORTANT RESOURCES -->
+
+        <section class="important-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>⭐ Important Resources</h2>
+
+                    <p>
+                        Quick access to important study material
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="important-resources"></div>
+
+        </section>
+
+
+        <!-- ALL SUBJECTS -->
+
+        <section>
+
+            <div class="all-heading">
+
+                <h2>📖 All Subjects</h2>
+
+                <p>
+                    Browse resources subject-wise
+                </p>
+
+            </div>
+
+            <div id="resources-container"></div>
+
+        </section>
+
+
+        <!-- NO RESULTS -->
+
+        <div id="no-results">
+
+            <div class="no-icon">🔍</div>
+
+            <h3>No resources found</h3>
+
+            <p>
+                Try searching with another keyword.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <strong>Engineering Minds</strong>
+
+        <p>
+            Made for students, by students.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
