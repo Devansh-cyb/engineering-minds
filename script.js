@@ -424,57 +424,427 @@ const practicals = [
        SOFT SKILLS
        ================================================= */
 
-    ...createPracticals("🗣️ Soft Skills"),
+    {
+        subject: "Soft Skills",
+        name: "Practical 1",
+        type: "Practical",
+        icon: "🗣️",
+        link: "#"
+    },
+
+    {
+        subject: "Soft Skills",
+        name: "Practical 2",
+        type: "Practical",
+        icon: "🗣️",
+        link: "#"
+    },
+
+    {
+        subject: "Soft Skills",
+        name: "Practical 3",
+        type: "Practical",
+        icon: "🗣️",
+        link: "#"
+    },
+
+    {
+        subject: "Soft Skills",
+        name: "Practical 4",
+        type: "Practical",
+        icon: "🗣️",
+        link: "#"
+    },
+
+    {
+        subject: "Soft Skills",
+        name: "Practical 5",
+        type: "Practical",
+        icon: "🗣️",
+        link: "#"
+    },
+
+    {
+        subject: "Soft Skills",
+        name: "Practical 6",
+        type: "Practical",
+        icon: "🗣️",
+        link: "#"
+    },
+
+    {
+        subject: "Soft Skills",
+        name: "Practical 7",
+        type: "Practical",
+        icon: "🗣️",
+        link: "#"
+    },
+
+    {
+        subject: "Soft Skills",
+        name: "Practical 8",
+        type: "Practical",
+        icon: "🗣️",
+        link: "#"
+    },
+
+    {
+        subject: "Soft Skills",
+        name: "Practical 9",
+        type: "Practical",
+        icon: "🗣️",
+        link: "#"
+    },
+
+    {
+        subject: "Soft Skills",
+        name: "Practical 10",
+        type: "Practical",
+        icon: "🗣️",
+        link: "#"
+    },
+
 
     /* =================================================
        ELECTRONICS LAB
        ================================================= */
 
-    ...createPracticals("⚡ Electronics Lab"),
+    {
+        subject: "Electronics Lab",
+        name: "Practical 1",
+        type: "Practical",
+        icon: "⚡",
+        link: "https://drive.google.com/file/d/11oPOrQiGOnax6QBNu2f3QUdW_GSre6rq/view?usp=sharing"
+    },
+
+    {
+        subject: "Electronics Lab",
+        name: "Practical 2",
+        type: "Practical",
+        icon: "⚡",
+        link: "#"
+    },
+
+    {
+        subject: "Electronics Lab",
+        name: "Practical 3",
+        type: "Practical",
+        icon: "⚡",
+        link: "#"
+    },
+
+    {
+        subject: "Electronics Lab",
+        name: "Practical 4",
+        type: "Practical",
+        icon: "⚡",
+        link: "#"
+    },
+
+    {
+        subject: "Electronics Lab",
+        name: "Practical 5",
+        type: "Practical",
+        icon: "⚡",
+        link: "#"
+    },
+
+    {
+        subject: "Electronics Lab",
+        name: "Practical 6",
+        type: "Practical",
+        icon: "⚡",
+        link: "#"
+    },
+
+    {
+        subject: "Electronics Lab",
+        name: "Practical 7",
+        type: "Practical",
+        icon: "⚡",
+        link: "#"
+    },
+
+    {
+        subject: "Electronics Lab",
+        name: "Practical 8",
+        type: "Practical",
+        icon: "⚡",
+        link: "#"
+    },
+
+    {
+        subject: "Electronics Lab",
+        name: "Practical 9",
+        type: "Practical",
+        icon: "⚡",
+        link: "#"
+    },
+
+    {
+        subject: "Electronics Lab",
+        name: "Practical 10",
+        type: "Practical",
+        icon: "⚡",
+        link: "#"
+    },
+
 
     /* =================================================
        WORKSHOP
        ================================================= */
 
-    ...createPracticals("🔧 Workshop"),
+    {
+        subject: "Workshop",
+        name: "Practical 1",
+        type: "Practical",
+        icon: "🔧",
+        link: "#"
+    },
+
+    {
+        subject: "Workshop",
+        name: "Practical 2",
+        type: "Practical",
+        icon: "🔧",
+        link: "#"
+    },
+
+    {
+        subject: "Workshop",
+        name: "Practical 3",
+        type: "Practical",
+        icon: "🔧",
+        link: "#"
+    },
+
+    {
+        subject: "Workshop",
+        name: "Practical 4",
+        type: "Practical",
+        icon: "🔧",
+        link: "#"
+    },
+
+    {
+        subject: "Workshop",
+        name: "Practical 5",
+        type: "Practical",
+        icon: "🔧",
+        link: "#"
+    },
+
+    {
+        subject: "Workshop",
+        name: "Practical 6",
+        type: "Practical",
+        icon: "🔧",
+        link: "#"
+    },
+
+    {
+        subject: "Workshop",
+        name: "Practical 7",
+        type: "Practical",
+        icon: "🔧",
+        link: "#"
+    },
+
+    {
+        subject: "Workshop",
+        name: "Practical 8",
+        type: "Practical",
+        icon: "🔧",
+        link: "#"
+    },
+
+    {
+        subject: "Workshop",
+        name: "Practical 9",
+        type: "Practical",
+        icon: "🔧",
+        link: "#"
+    },
+
+    {
+        subject: "Workshop",
+        name: "Practical 10",
+        type: "Practical",
+        icon: "🔧",
+        link: "#"
+    },
+
 
     /* =================================================
        CHEMISTRY LAB
        ================================================= */
 
-    ...createPracticals("🧪 Chemistry Lab"),
+    {
+        subject: "Chemistry Lab",
+        name: "Practical 1",
+        type: "Practical",
+        icon: "🧪",
+        link: "#"
+    },
+
+    {
+        subject: "Chemistry Lab",
+        name: "Practical 2",
+        type: "Practical",
+        icon: "🧪",
+        link: "#"
+    },
+
+    {
+        subject: "Chemistry Lab",
+        name: "Practical 3",
+        type: "Practical",
+        icon: "🧪",
+        link: "#"
+    },
+
+    {
+        subject: "Chemistry Lab",
+        name: "Practical 4",
+        type: "Practical",
+        icon: "🧪",
+        link: "#"
+    },
+
+    {
+        subject: "Chemistry Lab",
+        name: "Practical 5",
+        type: "Practical",
+        icon: "🧪",
+        link: "#"
+    },
+
+    {
+        subject: "Chemistry Lab",
+        name: "Practical 6",
+        type: "Practical",
+        icon: "🧪",
+        link: "#"
+    },
+
+    {
+        subject: "Chemistry Lab",
+        name: "Practical 7",
+        type: "Practical",
+        icon: "🧪",
+        link: "#"
+    },
+
+    {
+        subject: "Chemistry Lab",
+        name: "Practical 8",
+        type: "Practical",
+        icon: "🧪",
+        link: "#"
+    },
+
+    {
+        subject: "Chemistry Lab",
+        name: "Practical 9",
+        type: "Practical",
+        icon: "🧪",
+        link: "#"
+    },
+
+    {
+        subject: "Chemistry Lab",
+        name: "Practical 10",
+        type: "Practical",
+        icon: "🧪",
+        link: "#"
+    },
+
 
     /* =================================================
        AI LAB
        ================================================= */
 
-    ...createPracticals("🤖 AI Lab")
+    {
+        subject: "AI Lab",
+        name: "Practical 1",
+        type: "Practical",
+        icon: "🤖",
+        link: "#"
+    },
+
+    {
+        subject: "AI Lab",
+        name: "Practical 2",
+        type: "Practical",
+        icon: "🤖",
+        link: "#"
+    },
+
+    {
+        subject: "AI Lab",
+        name: "Practical 3",
+        type: "Practical",
+        icon: "🤖",
+        link: "#"
+    },
+
+    {
+        subject: "AI Lab",
+        name: "Practical 4",
+        type: "Practical",
+        icon: "🤖",
+        link: "#"
+    },
+
+    {
+        subject: "AI Lab",
+        name: "Practical 5",
+        type: "Practical",
+        icon: "🤖",
+        link: "#"
+    },
+
+    {
+        subject: "AI Lab",
+        name: "Practical 6",
+        type: "Practical",
+        icon: "🤖",
+        link: "#"
+    },
+
+    {
+        subject: "AI Lab",
+        name: "Practical 7",
+        type: "Practical",
+        icon: "🤖",
+        link: "#"
+    },
+
+    {
+        subject: "AI Lab",
+        name: "Practical 8",
+        type: "Practical",
+        icon: "🤖",
+        link: "#"
+    },
+
+    {
+        subject: "AI Lab",
+        name: "Practical 9",
+        type: "Practical",
+        icon: "🤖",
+        link: "#"
+    },
+
+    {
+        subject: "AI Lab",
+        name: "Practical 10",
+        type: "Practical",
+        icon: "🤖",
+        link: "#"
+    }
 
 ];
-
-
-/* =====================================================
-   CREATE 10 PRACTICALS FOR EACH LAB
-   ===================================================== */
-
-function createPracticals(subject) {
-
-    return Array.from({ length: 10 }, (_, index) => ({
-
-        subject: subject,
-
-        name: `Practical ${index + 1}`,
-
-        type: "Practical",
-
-        icon: "🔬",
-
-        link: "#"
-
-    }));
-
-}
-
 
 /* =====================================================
    IMPORTANT RESOURCES
