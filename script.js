@@ -1169,20 +1169,20 @@ function displayAssignmentsAndPracticals() {
 
 }
 
-
 /* =====================================================
-   SEARCH
+   FINAL SEARCH SYSTEM
    ===================================================== */
 
 function searchResources() {
 
-    const query =
-        document
-            .getElementById("search")
-            .value
-            .toLowerCase()
-            .trim();
+    const input = document.getElementById("search");
 
+    const query = input.value.toLowerCase().trim();
+
+    const clearButton = document.getElementById("clear-search");
+
+
+    /* Empty search */
 
     if (query === "") {
 
@@ -1192,80 +1192,158 @@ function searchResources() {
 
         displayAssignmentsAndPracticals();
 
-        return;
+        clearButton.style.display = "none";
 
+        return;
     }
 
 
-    const filteredResources =
-        resources.filter(resource => {
+    /* Show clear button */
+
+    clearButton.style.display = "block";
+
+
+    /* ================================================
+       SEARCH ALL STUDY RESOURCES
+       ================================================ */
+
+    const filteredResources = resources.filter(resource => {
+
+        return (
+
+            resource.name.toLowerCase().includes(query) ||
+
+            resource.subject.toLowerCase().includes(query) ||
+
+            resource.unit.toLowerCase().includes(query) ||
+
+            resource.type.toLowerCase().includes(query)
+
+        );
+
+    });
+
+
+    displayResources(filteredResources);
+
+
+    /* ================================================
+       SEARCH ASSIGNMENTS + PRACTICALS
+       ================================================ */
+
+    const filteredItems =
+        [...assignments, ...practicals].filter(item => {
 
             return (
 
-                resource.name
-                    .toLowerCase()
-                    .includes(query)
+                item.name.toLowerCase().includes(query) ||
 
-                ||
+                item.subject.toLowerCase().includes(query) ||
 
-                resource.subject
-                    .toLowerCase()
-                    .includes(query)
-
-                ||
-
-                resource.unit
-                    .toLowerCase()
-                    .includes(query)
-
-                ||
-
-                resource.type
-                    .toLowerCase()
-                    .includes(query)
+                item.type.toLowerCase().includes(query)
 
             );
 
         });
 
 
-    displayResources(filteredResources);
+    displayAssignmentsSearch(filteredItems);
 
 
-    const filteredAssignments =
-        [...assignments, ...practicals]
-            .filter(item => {
+    /* ================================================
+       SEARCH IMPORTANT RESOURCES
+       ================================================ */
 
-                return (
+    const filteredImportant =
+        resources.filter(resource => {
 
-                    item.name
-                        .toLowerCase()
-                        .includes(query)
+            if (!resource.important) return false;
 
-                    ||
+            return (
 
-                    item.subject
-                        .toLowerCase()
-                        .includes(query)
+                resource.name.toLowerCase().includes(query) ||
 
-                    ||
+                resource.subject.toLowerCase().includes(query) ||
 
-                    item.type
-                        .toLowerCase()
-                        .includes(query)
+                resource.unit.toLowerCase().includes(query) ||
 
-                );
+                resource.type.toLowerCase().includes(query)
 
-            });
+            );
+
+        });
 
 
-    displayAssignmentsSearch(filteredAssignments);
+    displayFilteredImportantResources(filteredImportant);
 
 }
 
 
 /* =====================================================
-   SEARCH RESULTS FOR ASSIGNMENTS / PRACTICALS
+   IMPORTANT RESOURCE SEARCH RESULTS
+   ===================================================== */
+
+function displayFilteredImportantResources(list) {
+
+    const container =
+        document.getElementById("important-resources");
+
+
+    if (!container) return;
+
+
+    container.innerHTML = "";
+
+
+    if (list.length === 0) return;
+
+
+    container.innerHTML = `
+
+        <div class="important-grid">
+
+            ${list.map(resource => `
+
+                <a
+                    href="${resource.link}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="important-card"
+                >
+
+                    <div class="important-icon">
+                        ${resource.icon}
+                    </div>
+
+                    <div class="important-info">
+
+                        <strong>
+                            ${resource.name}
+                        </strong>
+
+                        <small>
+                            ${resource.subject} • ${resource.unit}
+                        </small>
+
+                    </div>
+
+                    <div class="arrow">
+                        ↗
+                    </div>
+
+                </a>
+
+            `).join("")}
+
+        </div>
+
+    `;
+
+}
+
+
+/* =====================================================
+   ASSIGNMENT / PRACTICAL SEARCH RESULTS
    ===================================================== */
 
 function displayAssignmentsSearch(list) {
@@ -1277,13 +1355,10 @@ function displayAssignmentsSearch(list) {
     if (!container) return;
 
 
-    if (list.length === 0) {
+    container.innerHTML = "";
 
-        container.innerHTML = "";
 
-        return;
-
-    }
+    if (list.length === 0) return;
 
 
     container.innerHTML = `
@@ -1331,6 +1406,82 @@ function displayAssignmentsSearch(list) {
 
 
 /* =====================================================
+   SEARCH BUTTON + ENTER + CLEAR
+   ===================================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const searchInput =
+        document.getElementById("search");
+
+    const searchButton =
+        document.getElementById("search-button");
+
+    const clearButton =
+        document.getElementById("clear-search");
+
+
+    /* Search button */
+
+    searchButton.addEventListener("click", () => {
+
+        searchResources();
+
+    });
+
+
+    /* Enter key */
+
+    searchInput.addEventListener("keydown", (event) => {
+
+        if (event.key === "Enter") {
+
+            event.preventDefault();
+
+            searchResources();
+
+        }
+
+    });
+
+
+    /* Show clear button while typing */
+
+    searchInput.addEventListener("input", () => {
+
+        clearButton.style.display =
+            searchInput.value.trim() === ""
+                ? "none"
+                : "block";
+
+    });
+
+
+    /* Clear */
+
+    clearButton.addEventListener("click", () => {
+
+        searchInput.value = "";
+
+        displayResources(resources);
+
+        displayImportantResources();
+
+        displayAssignmentsAndPracticals();
+
+        clearButton.style.display = "none";
+
+        searchInput.focus();
+
+    });
+
+
+    clearButton.style.display = "none";
+
+});
+
+
+/* =====================================================
    START
    ===================================================== */
 
@@ -1339,3 +1490,16 @@ displayImportantResources();
 displayResources();
 
 displayAssignmentsAndPracticals();
+
+
+function clearSearch() {
+
+    document.getElementById("search").value = "";
+
+    displayResources(resources);
+    displayImportantResources();
+    displayAssignmentsAndPracticals();
+
+    document.getElementById("clear-search").style.display = "none";
+
+}

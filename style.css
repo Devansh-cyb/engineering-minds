@@ -1,7 +1,15 @@
+/* =====================================================
+   RESET
+   ===================================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 body {
@@ -9,10 +17,13 @@ body {
     background: #f5f7fb;
     color: #172033;
     line-height: 1.5;
+    overflow-x: hidden;
 }
 
 
-/* ================= CONTAINER ================= */
+/* =====================================================
+   CONTAINER
+   ===================================================== */
 
 .container {
     width: 92%;
@@ -21,7 +32,9 @@ body {
 }
 
 
-/* ================= HEADER ================= */
+/* =====================================================
+   HEADER
+   ===================================================== */
 
 header {
     background: #111827;
@@ -60,30 +73,32 @@ header p {
 }
 
 
-/* ================= SEARCH ================= */
+/* =====================================================
+   SEARCH
+   ===================================================== */
 
 .search-box {
     max-width: 680px;
-
     margin: 25px auto 0;
 
-    padding: 5px 15px;
+    padding: 5px 10px 5px 15px;
 
     display: flex;
     align-items: center;
-
-    gap: 10px;
+    gap: 8px;
 
     background: white;
     border-radius: 13px;
 }
 
-.search-box span {
+.search-icon {
+    flex-shrink: 0;
     font-size: 19px;
 }
 
 .search-box input {
-    width: 100%;
+    flex: 1;
+    min-width: 0;
 
     padding: 13px 5px;
 
@@ -91,12 +106,48 @@ header p {
     outline: none;
 
     font-size: 16px;
-
     color: #172033;
+    background: transparent;
+}
+
+.search-box button {
+    border: none;
+    cursor: pointer;
+
+    border-radius: 8px;
+
+    padding: 9px 13px;
+
+    font-weight: 600;
+    font-size: 14px;
+
+    transition: 0.2s ease;
+}
+
+#search-button {
+    background: #111827;
+    color: white;
+}
+
+#search-button:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+#clear-search {
+    background: #f1f5f9;
+    color: #475569;
+    padding: 8px 10px;
+}
+
+#clear-search:hover {
+    background: #e2e8f0;
 }
 
 
-/* ================= MAIN ================= */
+/* =====================================================
+   MAIN
+   ===================================================== */
 
 main {
     padding: 32px 0 60px;
@@ -116,7 +167,9 @@ main {
 }
 
 
-/* ================= IMPORTANT ================= */
+/* =====================================================
+   SECTION HEADINGS
+   ===================================================== */
 
 .important-section {
     margin-bottom: 35px;
@@ -135,29 +188,27 @@ main {
 .section-heading p,
 .all-heading p {
     margin-top: 3px;
-
     color: #64748b;
-
     font-size: 14px;
 }
 
 
-/* Important cards */
+/* =====================================================
+   IMPORTANT RESOURCES
+   ===================================================== */
 
 .important-grid {
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
-
     gap: 12px;
 }
 
 .important-card {
     display: flex;
-
     align-items: center;
-
     gap: 13px;
+
+    min-height: 72px;
 
     padding: 16px;
 
@@ -166,7 +217,6 @@ main {
     border-radius: 14px;
 
     text-decoration: none;
-
     color: #172033;
 
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
@@ -183,10 +233,10 @@ main {
     height: 44px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
+
+    flex-shrink: 0;
 
     border-radius: 11px;
 
@@ -197,34 +247,34 @@ main {
 
 .important-info {
     flex: 1;
+    min-width: 0;
 }
 
 .important-info strong {
     display: block;
-
     font-size: 15px;
 }
 
 .important-info small {
     display: block;
-
     margin-top: 3px;
-
     color: #64748b;
 }
 
 .arrow {
     color: #64748b;
+    flex-shrink: 0;
 }
 
 
-/* ================= SUBJECT ================= */
+/* =====================================================
+   SUBJECT
+   ===================================================== */
 
 .subject {
     background: white;
 
     padding: 22px;
-
     margin-bottom: 20px;
 
     border-radius: 16px;
@@ -234,10 +284,10 @@ main {
 
 .subject-header {
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
+
+    gap: 15px;
 
     margin-bottom: 18px;
 }
@@ -248,12 +298,14 @@ main {
 
 .resource-count {
     color: #64748b;
-
     font-size: 13px;
+    white-space: nowrap;
 }
 
 
-/* ================= UNITS ================= */
+/* =====================================================
+   UNITS
+   ===================================================== */
 
 .unit {
     margin-bottom: 20px;
@@ -274,20 +326,21 @@ main {
 }
 
 
-/* ================= RESOURCES ================= */
+/* =====================================================
+   RESOURCES
+   ===================================================== */
 
 .resources {
     display: grid;
-
     gap: 9px;
 }
 
 .resource {
     display: flex;
-
     align-items: center;
-
     gap: 13px;
+
+    min-height: 64px;
 
     padding: 13px;
 
@@ -296,7 +349,6 @@ main {
     border-radius: 11px;
 
     text-decoration: none;
-
     color: #172033;
 
     transition: 0.2s;
@@ -304,7 +356,6 @@ main {
 
 .resource:hover {
     transform: translateX(4px);
-
     background: #eef2ff;
 }
 
@@ -313,10 +364,10 @@ main {
     height: 43px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
+
+    flex-shrink: 0;
 
     background: white;
 
@@ -327,38 +378,35 @@ main {
 
 .resource-info {
     flex: 1;
+    min-width: 0;
 }
 
 .resource-info strong {
     display: block;
-
     font-size: 15px;
 }
 
 .resource-info small {
     display: block;
-
     margin-top: 3px;
-
     color: #64748b;
 }
 
 .open {
     color: #64748b;
-
     font-size: 18px;
+    flex-shrink: 0;
 }
 
 
-/* ================= ASSIGNMENTS & PRACTICALS ================= */
+/* =====================================================
+   ASSIGNMENTS & PRACTICALS
+   ===================================================== */
 
 .assignments-section {
     margin-top: 55px;
     margin-bottom: 50px;
 }
-
-
-/* MAIN GRID */
 
 .assignment-grid {
     display: grid;
@@ -372,9 +420,6 @@ main {
 
     margin-top: 25px;
 }
-
-
-/* SUBJECT CARD */
 
 .assignment-subject {
     background: #ffffff;
@@ -399,15 +444,13 @@ main {
         0 10px 28px rgba(0, 0, 0, 0.10);
 }
 
-
-/* SUBJECT HEADER */
-
 .assignment-subject-header {
     display: flex;
 
     align-items: center;
-
     justify-content: space-between;
+
+    gap: 12px;
 
     padding: 18px 20px;
 
@@ -424,7 +467,6 @@ main {
     margin: 0;
 
     font-size: 17px;
-
     line-height: 1.4;
 }
 
@@ -445,22 +487,22 @@ main {
 }
 
 
-/* ITEM LIST */
+/* =====================================================
+   ASSIGNMENT LIST
+   ===================================================== */
 
 .assignment-list {
     padding: 8px 10px 10px;
 }
-
-
-/* INDIVIDUAL ASSIGNMENT / PRACTICAL */
 
 .assignment-item {
     display: flex;
 
     align-items: center;
 
-    text-decoration: none;
+    min-height: 62px;
 
+    text-decoration: none;
     color: inherit;
 
     padding: 13px 11px;
@@ -474,7 +516,6 @@ main {
 
 .assignment-item:hover {
     background: #f6f7fb;
-
     transform: translateX(3px);
 }
 
@@ -488,7 +529,6 @@ main {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     background: #f3f4f8;
@@ -543,7 +583,6 @@ main {
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     border-radius: 50%;
@@ -568,7 +607,9 @@ main {
 }
 
 
-/* ================= NO RESULTS ================= */
+/* =====================================================
+   NO RESULTS
+   ===================================================== */
 
 #no-results {
     display: none;
@@ -580,7 +621,6 @@ main {
 
 .no-icon {
     font-size: 35px;
-
     margin-bottom: 10px;
 }
 
@@ -593,98 +633,542 @@ main {
 }
 
 
-/* ================= FOOTER ================= */
+/* =====================================================
+   PREMIUM FOOTER
+   ===================================================== */
 
 footer {
-    text-align: center;
+    margin-top: 70px;
 
-    padding: 30px;
+    padding: 45px 20px 25px;
 
     background: #111827;
 
     color: white;
 }
 
-footer p {
-    margin-top: 5px;
+.footer-content {
+    max-width: 1100px;
 
-    color: #94a3b8;
+    margin: auto;
 
+    text-align: center;
+}
+
+.footer-brand {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.footer-logo {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: white;
+    color: #111827;
+
+    font-weight: 800;
+    font-size: 20px;
+
+    margin-bottom: 14px;
+}
+
+.footer-brand h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-brand p {
+    margin: 7px 0;
+}
+
+.footer-tagline {
+    opacity: 0.7;
     font-size: 14px;
 }
 
+.footer-divider {
+    width: 100%;
+    height: 1px;
 
-/* ================= MOBILE ================= */
+    background: rgba(255, 255, 255, 0.12);
 
-@media (max-width: 650px) {
+    margin: 30px 0;
+}
+
+.footer-credit h3 {
+    margin: 12px 0 6px;
+
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    opacity: 0.65;
+}
+
+.founder-names {
+    font-size: 18px;
+
+    font-weight: 700;
+
+    margin: 5px 0 20px;
+}
+
+.founder-names span {
+    margin: 0 8px;
+    opacity: 0.5;
+}
+
+.chatgpt-credit {
+    max-width: 600px;
+
+    margin: auto;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    font-size: 13px;
+
+    opacity: 0.55;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+
+/* =====================================================
+   TABLET
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+    .container {
+        width: 94%;
+    }
 
     header {
-        padding: 30px 0 38px;
+        padding: 34px 0 40px;
     }
 
     header h1 {
-        font-size: 27px;
+        font-size: 30px;
     }
+
+    .assignment-grid {
+        grid-template-columns: repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+        gap: 16px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+    }
+
+
+    /* HEADER */
+
+    header {
+        padding: 28px 0 32px;
+    }
+
+    .logo {
+        width: 54px;
+        height: 54px;
+
+        margin-bottom: 12px;
+    }
+
+    header h1 {
+        font-size: 26px;
+        line-height: 1.25;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+
+    /* SEARCH */
+
+    .search-box {
+        margin-top: 20px;
+
+        padding: 5px 8px 5px 12px;
+
+        flex-wrap: wrap;
+
+        border-radius: 12px;
+    }
+
+    .search-icon {
+        font-size: 17px;
+    }
+
+    .search-box input {
+        min-width: 0;
+
+        padding: 12px 3px;
+
+        font-size: 15px;
+    }
+
+    .search-box button {
+        min-height: 40px;
+    }
+
+    #search-button {
+        padding: 9px 13px;
+    }
+
+    #clear-search {
+        padding: 8px 10px;
+    }
+
+
+    /* MAIN */
+
+    main {
+        padding: 25px 0 45px;
+    }
+
+    .welcome {
+        margin-bottom: 22px;
+    }
+
+    .welcome h2 {
+        font-size: 22px;
+    }
+
+
+    /* SECTION HEADINGS */
+
+    .section-heading h2,
+    .all-heading h2 {
+        font-size: 19px;
+    }
+
+    .section-heading p,
+    .all-heading p {
+        font-size: 13px;
+    }
+
+
+    /* IMPORTANT */
 
     .important-grid {
         grid-template-columns: 1fr;
+        gap: 10px;
     }
 
+    .important-card {
+        min-height: 68px;
+        padding: 13px;
+        gap: 11px;
+    }
+
+    .important-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 19px;
+    }
+
+    .important-info strong {
+        font-size: 14px;
+        line-height: 1.35;
+    }
+
+    .important-info small {
+        font-size: 11px;
+    }
+
+
+    /* SUBJECT */
+
     .subject {
-        padding: 17px;
+        padding: 15px;
+
+        margin-bottom: 16px;
+
+        border-radius: 14px;
+    }
+
+    .subject-header {
+        align-items: flex-start;
+
+        margin-bottom: 15px;
+
+        gap: 8px;
     }
 
     .subject-title {
         font-size: 18px;
+        line-height: 1.3;
+    }
+
+    .resource-count {
+        font-size: 11px;
+    }
+
+
+    /* UNITS */
+
+    .unit {
+        margin-bottom: 17px;
+    }
+
+    .unit-title {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+
+    /* RESOURCES */
+
+    .resources {
+        gap: 8px;
     }
 
     .resource {
-        padding: 11px;
+        min-height: 62px;
+
+        padding: 10px;
+
+        gap: 10px;
     }
 
     .resource-icon {
         width: 40px;
         height: 40px;
+
+        font-size: 19px;
     }
 
-}
+    .resource-info strong {
+        font-size: 14px;
+        line-height: 1.35;
+    }
+
+    .resource-info small {
+        font-size: 11px;
+    }
+
+    .open {
+        font-size: 17px;
+    }
 
 
-/* ================= ASSIGNMENTS MOBILE ================= */
-
-@media (max-width: 600px) {
+    /* ASSIGNMENTS */
 
     .assignments-section {
         margin-top: 40px;
+        margin-bottom: 35px;
     }
 
     .assignment-grid {
         grid-template-columns: 1fr;
 
-        gap: 16px;
+        gap: 14px;
+
+        margin-top: 18px;
+    }
+
+    .assignment-subject {
+        border-radius: 15px;
     }
 
     .assignment-subject-header {
-        padding: 16px;
+        padding: 15px;
+
+        gap: 8px;
     }
 
     .assignment-subject-header h3 {
         font-size: 15px;
     }
 
+    .assignment-subject-header span {
+        font-size: 10px;
+        padding: 4px 7px;
+    }
+
+    .assignment-list {
+        padding: 6px 8px 8px;
+    }
+
     .assignment-item {
-        padding: 12px 8px;
+        min-height: 60px;
+
+        padding: 10px 7px;
+
+        border-radius: 10px;
     }
 
     .assignment-icon {
         width: 37px;
         height: 37px;
 
+        margin-right: 10px;
+
         font-size: 17px;
     }
 
     .assignment-info strong {
         font-size: 13px;
+        line-height: 1.35;
+    }
+
+    .assignment-info small {
+        font-size: 10px;
+    }
+
+    .assignment-arrow {
+        width: 30px;
+        height: 30px;
+
+        font-size: 14px;
+    }
+
+
+    /* NO RESULTS */
+
+    #no-results {
+        padding: 45px 15px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        margin-top: 50px;
+
+        padding: 38px 16px 22px;
+    }
+
+    .footer-logo {
+        width: 52px;
+        height: 52px;
+
+        font-size: 19px;
+    }
+
+    .footer-brand h2 {
+        font-size: 21px;
+    }
+
+    .footer-brand p {
+        font-size: 13px;
+    }
+
+    .footer-divider {
+        margin: 25px 0;
+    }
+
+    .footer-credit h3 {
+        font-size: 12px;
+    }
+
+    .founder-names {
+        font-size: 16px;
+
+        line-height: 1.5;
+    }
+
+    .founder-names span {
+        margin: 0 5px;
+    }
+
+    .chatgpt-credit {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        gap: 6px;
+
+        font-size: 11px;
+    }
+
+}
+
+
+/* =====================================================
+   VERY SMALL PHONES
+   ===================================================== */
+
+@media (max-width: 380px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    header p {
+        font-size: 13px;
+    }
+
+    .search-box {
+        padding: 5px 7px;
+    }
+
+    .search-box input {
+        font-size: 14px;
+    }
+
+    .search-box button {
+        font-size: 12px;
+    }
+
+    .subject {
+        padding: 13px;
+    }
+
+    .subject-title {
+        font-size: 17px;
+    }
+
+    .resource {
+        padding: 9px;
+    }
+
+    .important-card {
+        padding: 11px;
     }
 
 }
