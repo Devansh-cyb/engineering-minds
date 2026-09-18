@@ -63,7 +63,7 @@ const resources = [
         type: "Questions",
         icon: "📝",
         important: true,
-        link: "#"
+        link: "https://drive.google.com/file/d/1nB46V6cVvYmhJ9lttPY-rhMMRRmznNC4/view?usp=sharing"
     },
 
 
