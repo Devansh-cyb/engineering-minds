@@ -522,7 +522,7 @@ const practicals = [
         name: "Practical 2",
         type: "Practical",
         icon: "⚡",
-        link: "#"
+        link: "https://drive.google.com/file/d/1JNkysS7gePHyKGGHKv903rCt1MaILJ-i/view?usp=sharing"
     },
 
     {
@@ -530,7 +530,7 @@ const practicals = [
         name: "Practical 3",
         type: "Practical",
         icon: "⚡",
-        link: "#"
+        link: "https://drive.google.com/file/d/1ELoEPO0uZyaz7bh8Z0T1x2jbKUR-OJSz/view?usp=sharing"
     },
 
     {
@@ -554,7 +554,7 @@ const practicals = [
         name: "Practical 6",
         type: "Practical",
         icon: "⚡",
-        link: "#"
+        link: "https://drive.google.com/file/d/16pFb5Cqee1pVdgu2S0gwfrFoIQR7bZXU/view?usp=sharing"
     },
 
     {
@@ -586,7 +586,7 @@ const practicals = [
         name: "Practical 10",
         type: "Practical",
         icon: "⚡",
-        link: "#"
+        link: "https://drive.google.com/file/d/1umiw1ZksWQ78BUf9ATb354oCpngMEbgi/view?usp=sharing"
     },
 
 
